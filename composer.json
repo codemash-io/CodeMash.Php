@@ -12,7 +12,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5",
-    "squizlabs/php_codesniffer": "*"
+    "squizlabs/php_codesniffer": "*",
+    "fzaninotto/faker": "^1.9"
   },
   "autoload": {
     "psr-4": {
@@ -29,7 +30,8 @@
     }
   },
   "scripts": {
-    "test": "phpunit",
+    "unit-tests": "phpunit --testsuite Unit",
+    "feature-tests": "phpunit --configuration phpunit_feature.xml --testsuite Feature",
     "phpcs": "phpcs",
     "phpcbf": "phpcbf"
   }

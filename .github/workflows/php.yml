@@ -44,5 +44,5 @@ jobs:
       - name: Run phpcs
         run: composer run-script phpcs src
 
-      - name: Run phpunit
-        run: composer run-script test
+      - name: Run php unit tests
+        run: composer run-script unit-tests

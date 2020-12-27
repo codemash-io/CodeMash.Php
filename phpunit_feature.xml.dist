@@ -1,0 +1,30 @@
+<phpunit
+    backupGlobals="true"
+    backupStaticAttributes="false"
+    cacheTokens="true"
+    colors="true"
+    forceCoversAnnotation="false"
+    processIsolation="false"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    stopOnRisky="false"
+    verbose="false"
+    failOnWarning="true"
+>
+    <testsuites>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="CODEMASH_API_SECRET_KEY" value="" force="false" />
+        <env name="CODEMASH_API_PROJECT_ID" value="" force="false" />
+        <env name="CODEMASH_API_TEST_COLLECTION_TITLE" value="" force="false" />
+        <env name="CODEMASH_API_TEST_TAXONOMY_TITLE" value="" force="false" />
+        <env name="CODEMASH_API_TEST_FUNCTION_ID" value="" force="false" />
+        <env name="CODEMASH_API_TEST_EMAIL_TEMPLATE_ID" value="" force="false" />
+        <env name="CODEMASH_API_TEST_PUSH_NOTIFICATION_TEMPLATE_ID" value="" force="false" />
+    </php>
+</phpunit>
